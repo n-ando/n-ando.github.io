@@ -20,11 +20,14 @@ This is Noriaki Ando's github webpage.
 - 出身：
   - 北海道札幌市
 
-## Projects
+## Related Pages
 
 - OpenRTM-aist
   - [OpenRTM-aist Web page](https://openrtm.org)
   - [OpenRTM-aist GitHub](https://github.com/OpenRTM)
+- [Software Platform Research Team](https://unit.aist.go.jp/icps/icps-sp)
+- [Industrial CPS Research Center](https://unit.aist.go.jp/icps/)
+- [AIST](https://www/aist.go.jp)
 
 
 ## 経歴
