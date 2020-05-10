@@ -27,7 +27,7 @@ This is Noriaki Ando's github webpage.
   - [OpenRTM-aist GitHub](https://github.com/OpenRTM)
 - [Software Platform Research Team](https://unit.aist.go.jp/icps/icps-sp)
 - [Industrial CPS Research Center](https://unit.aist.go.jp/icps/)
-- [AIST](https://www/aist.go.jp)
+- [AIST](https://www.aist.go.jp/)
 
 
 ## 経歴
