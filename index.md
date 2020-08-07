@@ -1,12 +1,14 @@
-This is Noriaki Ando's github webpage.
+This is Noriaki Ando's GitHub webpage.
 
 <img src="https://user-images.githubusercontent.com/11814060/81364416-8ab01d00-9120-11ea-9433-18e6cb35500b.jpg" width="200" align="right">
 
 ## Profile
 - Affiliation:
   - National Institute of Advanced Industrial Science and Technology
+  - Tokyo Metropolitan University
 - Division: 
-  -Team Leader, Software Platform Research Team, Industrial CPS Research Center
+  - Team Leader, Software Platform Research Team, Industrial CPS Research Center
+  - Professor, Faculty of System Design, Tokyo Metropolitan University 
 - Research: 
   - Robot Middleware, Software Architecture, Abmient Intelligence, Tele-operation, Standardization
 - Birthplace:
@@ -14,10 +16,12 @@ This is Noriaki Ando's github webpage.
 
 ## プロフィール
 - 所属：
-  - 国立研究開発法人産業技術総合研究所 
+  - 国立研究開発法人産業技術総合研究所
+  - 東京都立大学
 - 部署：
   - ICPS研究センター, ソフトウェアプラットフォーム研究チーム長
   - 豊田自動織機-産総研AL連携研究ラボ
+  - 東京都立大学 システムデザイン研究科 客員教授 (連携大学院)
 - 研究テーマ: 
   - RTミドルウェア、ソフトウェアアーキテクチャ、空間知能化、テレオペレーション、標準化
 - 出身地：
