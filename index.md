@@ -8,7 +8,7 @@ This is Noriaki Ando's GitHub webpage.
   - Tokyo Metropolitan University
 - Division: 
   - Team Leader, Software Platform Research Team, Industrial CPS Research Center
-  - Professor, Faculty of System Design, Tokyo Metropolitan University 
+  - Visiting Professor, Faculty of System Design, Tokyo Metropolitan University 
 - Research: 
   - Robot Middleware, Software Architecture, Abmient Intelligence, Tele-operation, Standardization
 - Birthplace:
