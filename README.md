@@ -1,2 +1,2 @@
 # n-ando.github.io
-OpenRTM-aist website
+Noriaki Ando's personal website on GitHub pages
