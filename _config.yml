@@ -19,7 +19,7 @@ locale                   : "ja-JP"
 title                    : "Noriaki Ando's Web page"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Noriaki Ando, Ph.D."
+name                     : "Noriaki Ando"
 description              : "Noriaki Ando's personal page."
 url                      : "https://n-ando.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -93,7 +93,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Noriaki Ando"
+  name             : "Noriaki Ando, Ph.D."
   avatar           : "/assets/images/n-ando.png"
   bio              : "Robotics Researcher"
   location         : "Tsukuba, Ibaraki, Japan"
