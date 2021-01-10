@@ -1,8 +1,10 @@
 ---
+layout: single
 permalink: /link
 title: "Link"
 toc: true
 ---
+
 ## リンク
 
 - OpenRTM-aist

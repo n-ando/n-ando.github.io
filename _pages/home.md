@@ -2,6 +2,8 @@
 permalink: /
 title: "Home"
 toc: true
+layout: home
+author_profile: true
 ---
 
 This is Noriaki Ando's webpage on GitHub.

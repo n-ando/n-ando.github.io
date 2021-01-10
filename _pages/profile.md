@@ -1,7 +1,9 @@
 ---
-permalink: /profile
 title: "Profile"
+layout: home
+permalink: /profile
 toc: true
+author_profile: true
 ---
 
 <img src="https://user-images.githubusercontent.com/11814060/81364416-8ab01d00-9120-11ea-9433-18e6cb35500b.jpg" width="200" align="right">
