@@ -2,7 +2,7 @@
 layout: single
 permalink: /link
 title: "Link"
-toc: true
+toc: false
 ---
 
 ## リンク
