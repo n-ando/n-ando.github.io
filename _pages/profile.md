@@ -1,7 +1,7 @@
 ---
 title: "Profile"
 layout: home
-permalink: /profile
+permalink: /profile/
 toc: true
 author_profile: true
 ---

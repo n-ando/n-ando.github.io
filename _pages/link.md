@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /link
+permalink: /link/
 title: "Link"
 toc: false
 ---
