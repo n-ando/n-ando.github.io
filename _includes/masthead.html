@@ -8,7 +8,7 @@
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt=""></a>
         {% endunless %}
         <a class="site-title" href="{{ '/' | relative_url }}">
-          {{ site.masthead_title | default: site.title }}
+          {{ site.masthead_title | default: site.data.l10n.title }}
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
         <ul class="visible-links">
@@ -17,6 +17,19 @@
               <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
             </li>
           {%- endfor -%}
+          <!-- language switcher -->
+          {% for lang in site.languages %}
+            {% assign lang_name = site.data[lang].l10n.lang_name %}
+            {% if lang == site.active_lang %}
+          <!-- {{ lang_name }} -->
+            {% else %}
+              {% if lang == site.default_lang %}
+            <li><a href=" {{ page.url }}">{{ lang_name }}</a></li>
+              {% else %}
+            <li><a href="/{{ lang }}{{ page.url }}">{{ lang_name }}</a></li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
