@@ -28,7 +28,7 @@ img {
 #contentWrapper a:hover.uline { color:#0000cc; text-decoration:underline; }
 
 #contents a[target="_blank"]::after{
-	content: url(../image/icon_url.png);
+	content: url(/assets/images/icon_url.png);
 	vertical-align: middle;
 	margin-left: 5px;
 }
