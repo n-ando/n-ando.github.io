@@ -16,7 +16,8 @@ lang: "ja"
   - 国立研究開発法人産業技術総合研究所 (産総研）
   - 東京都立大学
 - 部署：
-  - 産総研 [ICPS研究センター](https://unit.aist.go.jp/icps/index.html), 副研究センター長
+  - 産総研 [情報人間工学領域](https://www.aist.go.jp/aist_j/business/aboutus/dep_dithf.html), 研究企画室長
+  - 産総研 [ICPS研究センター](https://unit.aist.go.jp/icps/index.html)
   - 産総研 [豊田自動織機-産総研AL連携研究ラボ](https://unit.aist.go.jp/tico-al2022/)
   - [東京都立大学](https://www.tmu.ac.jp/) [システムデザイン研究科](https://www.sd.tmu.ac.jp/) [客員教授 (連携大学院)](https://www.aist.go.jp/aist_j/researcher/aboutus/pgs/kanto/tokyo-metropolitan.html)
 - 研究テーマ: 
