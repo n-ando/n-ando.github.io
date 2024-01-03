@@ -1,19 +1,24 @@
 # main links
-main:
+ja:
   - title: "Home"
     url: /
-  - title: "Profile"
+  - title: "プロフィール"
     url: /profile/
   - title: "OpenRTM"
     url: https://openrtm.org
-  - title: "Links"
+  - title: "リンク"
     url: /link/
-  # - title: "Quick-Start Guide"
-  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "English"
+    url: /en/
+
+en:
+  - title: "Home"
+    url: /en/
+  - title: "Profile"
+    url: /en/profile/
+  - title: "OpenRTM"
+    url: https://openrtm.org
+  - title: "Links"
+    url: /en/link/
+  - title: "Japanese"
+    url: /ja/

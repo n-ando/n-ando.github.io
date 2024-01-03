@@ -279,8 +279,18 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
     values:
+      lang: "ja"
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+  - scope:
+      path: "en"
+    values:
+      lang: "en"
       layout: single
       author_profile: true
       read_time: true
