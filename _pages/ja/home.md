@@ -21,7 +21,7 @@ classes: wide landing-page
     <h1>安藤 慶昭 <span>Noriaki Ando</span></h1>
     <p>国立研究開発法人産業技術総合研究所<br>インテリジェントシステム研究部門　部門長</p>
     <div class="identity-social" aria-label="Social and research profiles">
-      <a class="social-chip" href="https://twitter.com/openrtm_ando" rel="me"><span class="social-chip__icon">𝕏</span> Twitter</a>
+      <!--a class="social-chip" href="https://twitter.com/openrtm_ando" rel="me"><span class="social-chip__icon">𝕏</span> Twitter</a-->
       <a class="social-chip" href="https://www.facebook.com/noriaki.ando.3/" rel="me"><span class="social-chip__icon">f</span> Facebook</a>
       <a class="social-chip" href="https://www.linkedin.com/search/results/people/?keywords=Noriaki%20Ando" aria-label="Find Noriaki Ando on LinkedIn"><span class="social-chip__icon">in</span> LinkedIn</a>
       <a class="social-chip social-chip--researchmap" href="https://researchmap.jp/noriaki.ando" rel="me"><img class="social-chip__image" src="{{ '/assets/images/researchmap-mark.svg' | relative_url }}" alt="">researchmap</a>
