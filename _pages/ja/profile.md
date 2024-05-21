@@ -10,8 +10,8 @@ classes: wide
 
 <div class="profile-intro">
 <div class="profile-intro__text">
-<h2>安藤 慶昭 / Noriaki Ando</h2>
-<p>国立研究開発法人産業技術総合研究所（AIST）<br>インテリジェントシステム研究部門 部門長</p>
+<h2>安藤 慶昭 / Noriaki Ando, Ph.D</h2>
+<p>国立研究開発法人産業技術総合研究所（AIST）<br>インテリジェントシステム研究部門 部門長<br>東京都立大学 連携大学院教授</p>
 <p>研究分野：ロボットミドルウェア、ソフトウェアアーキテクチャ、知能ロボティクス、CPS、標準化</p>
 </div>
 <img class="profile-intro__portrait" src="https://www.aist.go.jp/Portals/0/resource_images/aist_j/collab/pgs/all/%E5%AE%89%E8%97%A4%20%E6%85%B6%E6%98%AD.jpg" alt="安藤慶昭の顔写真">
