@@ -46,14 +46,19 @@
   }
 }
 
-/* 本文中のリンク */
-.page__content a {
-  color: #79c9ff;
-  text-decoration: none;
+/* 本文中のリンク：通常・訪問済み・ホバー時 */
+.page__content a,
+.page__content a:visited {
+  color: #79c9ff !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
-/* マウスを重ねたとき */
-.page__content a:hover {
-  color: #b4e3ff;
-  text-decoration: underline;
+.page__content a:hover,
+.page__content a:focus {
+  color: #b4e3ff !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
