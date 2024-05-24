@@ -5,7 +5,6 @@ layout: single
 lang: ja
 author_profile: true
 ---
-# 所属学会
 
 - [計測自動制御学会（SICE）](https://www.sice.jp/)
   - [システムインテグレーション部門](https://sice-si.org/)

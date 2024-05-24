@@ -6,7 +6,6 @@ lang: ja
 author_profile: true
 classes: wide
 ---
-# 経歴
 
 <div class="profile-intro">
 <div class="profile-intro__text">
