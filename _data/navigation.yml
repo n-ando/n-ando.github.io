@@ -1,26 +1,30 @@
 ja:
   - title: "ホーム"
     url: /
-  - title: "プロフィール"
+  - title: "経歴"
     url: /profile/
-  - title: "研究"
-    url: /research/
-  - title: "ソフトウェア"
+  - title: "受賞"
+    url: /awards/
+  - title: "論文"
+    url: /publications/
+  - title: "所属学会"
+    url: /societies/
+  - title: "Works"
     url: /software/
-  - title: "リンク"
-    url: /link/
-  - title: "English"
-    url: /en/
+  - title: "研究プロジェクト"
+    url: /research/
 en:
   - title: "Home"
     url: /en/
-  - title: "Profile"
+  - title: "Career"
     url: /en/profile/
-  - title: "Research"
-    url: /en/research/
-  - title: "Software"
+  - title: "Awards"
+    url: /en/awards/
+  - title: "Publications"
+    url: /en/publications/
+  - title: "Societies"
+    url: /en/societies/
+  - title: "Works"
     url: /en/software/
-  - title: "Links"
-    url: /en/link/
-  - title: "日本語"
-    url: /
+  - title: "Projects"
+    url: /en/research/
