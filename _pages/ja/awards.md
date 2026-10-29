@@ -3,7 +3,7 @@ title: "受賞歴"
 permalink: /awards/
 layout: single
 lang: ja
-author_profile: false
+author_profile: true
 classes: wide
 ---
 # 受賞歴
