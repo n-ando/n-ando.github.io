@@ -1,7 +1,7 @@
 ---
 permalink: /en/
 title: "Noriaki Ando"
-layout: single
+layout: landing
 author_profile: false
 lang: en
 classes: wide landing-page
@@ -20,10 +20,11 @@ classes: wide landing-page
     <p class="identity-label">RESEARCHER PROFILE</p>
     <h1>Noriaki Ando <span>安藤 慶昭</span></h1>
     <p>Director, Intelligent Systems Research Institute<br>National Institute of Advanced Industrial Science and Technology (AIST)</p>
-    <div class="identity-social">
-      <a href="https://github.com/n-ando">GitHub</a>
-      <a href="https://openrtm.org/">OpenRTM</a>
-      <a href="https://twitter.com/openrtm_ando">X / Twitter</a>
+    <div class="identity-social" aria-label="Social and research profiles">
+      <a class="social-chip" href="https://twitter.com/openrtm_ando" rel="me"><span class="social-chip__icon">𝕏</span> Twitter</a>
+      <a class="social-chip" href="https://www.facebook.com/noriaki.ando.3/" rel="me"><span class="social-chip__icon">f</span> Facebook</a>
+      <a class="social-chip" href="https://www.linkedin.com/search/results/people/?keywords=Noriaki%20Ando" aria-label="Find Noriaki Ando on LinkedIn"><span class="social-chip__icon">in</span> LinkedIn</a>
+      <a class="social-chip social-chip--researchmap" href="https://researchmap.jp/noriaki.ando" rel="me"><span class="social-chip__icon">r</span><span>researchmap<small>JST Research Profile</small></span></a>
     </div>
   </div>
 </section>
@@ -35,13 +36,5 @@ classes: wide landing-page
     <a href="/en/research/"><span>RESEARCH PROJECTS</span><h3>Research Projects</h3><p>Robot software, intelligent robotics, CPS, automated mobility, and real-world deployment.</p></a>
     <a href="/en/software/"><span>OPEN SOURCE & TOOLS</span><h3>Works</h3><p>Software and developer tools, including OpenRTM-aist and FinderTools.</p></a>
     <a href="/en/publications/"><span>ACADEMIC OUTPUT</span><h3>Publications</h3><p>A dedicated space for journal papers, conference papers, and research contributions.</p></a>
-  </div>
-  <div class="landing-section-links">
-    <a href="/en/profile/">Career</a>
-    <a href="/en/awards/">Awards</a>
-    <a href="/en/publications/">Publications</a>
-    <a href="/en/societies/">Societies</a>
-    <a href="/en/software/">Works</a>
-    <a href="/en/research/">Projects</a>
   </div>
 </div>
