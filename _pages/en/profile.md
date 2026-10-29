@@ -1,38 +1,52 @@
 ---
-title: "Profile"
-layout: home
+title: "Career"
+layout: single
 permalink: /en/profile/
-toc: true
-author_profile: true
-lang: "en"
+lang: en
+author_profile: false
+classes: wide
 ---
+# Career
 
-<img src="https://user-images.githubusercontent.com/11814060/81364416-8ab01d00-9120-11ea-9433-18e6cb35500b.jpg" width="200" align="right">
+<div class="profile-intro">
+<div class="profile-intro__text">
+<h2>Noriaki Ando, Ph.D.</h2>
+<p>Director, Intelligent Systems Research Institute<br>National Institute of Advanced Industrial Science and Technology (AIST)</p>
+<p>Research interests: robot middleware, software architecture, intelligent robotics, cyber-physical systems, and standardization.</p>
+</div>
+<img class="profile-intro__portrait" src="https://www.aist.go.jp/Portals/0/resource_images/aist_j/collab/pgs/all/%E5%AE%89%E8%97%A4%20%E6%85%B6%E6%98%AD.jpg" alt="Portrait of Noriaki Ando">
+</div>
 
-## Profile
-- Affiliation:
-  - National Institute of Advanced Industrial Science and Technology
-  - Tokyo Metropolitan University
-- Position:
-  - Director, Intelligent Systems Research Institute, National Institute of Advanced Industrial Science and Technology (AIST)
-  - Visiting Professor, Tokyo Metropolitan University
-- Research: 
-  - Robot Middleware, Software Architecture, Abmient Intelligence, Tele-operation, Standardization
-- Birthplace:
-  - Sapporo, Hokkaido, Japan
+## Education
 
-## Educational Background and Work History
+- **2002** Ph.D. in Engineering, The University of Tokyo
+- **1999** M.Eng., The University of Tokyo
+- **1997** B.Eng., Kyoto University
+- **1993** Hokkaido Sapporo Kita High School
 
-| Month/Year	 | Educational Background and Work History |
-| Mar., 1993	| Graduated from Hokkaido Sapporo Kita High School |
-| Mar., 1997	| Graduated from Department of Electrical and Electronic Engineering, Faculty of Engineering, Kyoto University |
-| Mar., 1999	| Completed Master's Program in Electronic and Information Engineering, Graduate School of Engineering, University of Tokyo |
-| Mar., 2002	| Doctor of Engineering, Graduate School of Engineering, University of Tokyo |
-| Apr., 2002-| Post Doctral Research Assistant, Institute of Industrial Science, University of Tokyo |
-| Apr., 2003-| Researcher, National Institute of Advanced Industrial Science and Technology |
-| Oct., 2009	| Senior Researcher, National Institute of Advanced Industrial Science and Technology |
-| Ocr., 2010- Nov., 2011|Visiting Researcher, Technical University of Munich, Germany |
-| Apr., 2014-March, 2015 | Industrial Machinery Division, Manufacturing Industries Bureau, Ministry of Economy, Trade and Industry |
-| Nov., 2015-	| National Institute of Advanced Industrial Science and Technology <br/> Robot Innovation Research Center <br/> Robot Software Platform Research Team Leader |
-| Apr., 2020- | National Institute of Advanced Industrial Science and Technology <br/> Industrial CPS Research Center <br/> Software Platform Research Team Leader |
-| Apr., 2022- | National Institute of Advanced Industrial Science and Technology <br/> Industrial CPS Research Center <br/> Deputy Director |
+[Complete education record on researchmap](https://researchmap.jp/noriaki.ando/education)
+
+## Professional Experience
+
+- **2025–present** Director, Intelligent Systems Research Institute, AIST
+- **2024** Head, Research Planning Office, AIST
+- **2022–** Deputy Director, Industrial CPS Research Center, AIST
+- **2020–** Team Leader, Software Platform Research Team, Industrial CPS Research Center, AIST
+- **2015–** Team Leader, Robot Software Platform Research Team, Robot Innovation Research Center, AIST
+- **2014–2015** Ministry of Economy, Trade and Industry (METI)
+- **2010–2011** Visiting Researcher, Technical University of Munich
+- **2009–** Senior Researcher, AIST
+- **2003–** Researcher, AIST
+- **2002–** Research Assistant, Institute of Industrial Science, The University of Tokyo
+
+[Complete professional experience on researchmap](https://researchmap.jp/noriaki.ando/research_experience)
+
+## Committee Memberships and Service
+
+- Steering Committee Chair, IEEE/SICE International Symposium on System Integration (SII), 2024–2026
+- Advisory Committee, SICE System Integration Division
+- ISO/TC 299 service robot modularity standardization activities
+
+[Complete committee record on researchmap](https://researchmap.jp/noriaki.ando/committee_memberships)
+
+*Note: researchmap could not be retrieved automatically. This summary uses previously verified biographical information; consult the linked researchmap records for updates.*

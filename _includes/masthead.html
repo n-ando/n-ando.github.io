@@ -1,30 +1,30 @@
+{% assign current_lang = page.lang | default: 'ja' %}
+{% assign current_path = page.permalink | default: page.url | default: '/' %}
+{% if current_lang == 'en' %}
+  {% assign translated_path = current_path | remove_first: '/en' %}
+  {% if translated_path == '' %}{% assign translated_path = '/' %}{% endif %}
+{% else %}
+  {% if current_path == '/' %}
+    {% assign translated_path = '/en/' %}
+  {% else %}
+    {% assign translated_path = current_path | prepend: '/en' %}
+  {% endif %}
+{% endif %}
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav" aria-label="Site navigation">
-        <a class="site-title" href="{% if site.active_lang == 'en' %}/en/{% else %}/{% endif %}">Noriaki Ando</a>
-        {% assign current_lang = site.active_lang | default: site.default_lang %}
-        {% assign menu_items = site.data.navigation[current_lang] %}
+        <a class="site-title" href="{% if current_lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">Noriaki Ando</a>
         <ul class="visible-links">
+          {% assign menu_items = site.data.navigation[current_lang] %}
           {% for link in menu_items %}
           <li class="masthead__menu-item"><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
           {% endfor %}
-          {% assign current_path = page.permalink | default: page.url %}
-          {% if current_lang == 'en' %}
-            {% assign translated_path = current_path | remove_first: '/en' %}
-            {% if translated_path == '' %}{% assign translated_path = '/' %}{% endif %}
-          {% else %}
-            {% if current_path == '/' %}
-              {% assign translated_path = '/en/' %}
-            {% else %}
-              {% assign translated_path = current_path | prepend: '/en' %}
-            {% endif %}
-          {% endif %}
           <li class="masthead__menu-item nav-language">
             {% if current_lang == 'en' %}
-              <a href="{{ translated_path | relative_url }}" lang="ja" aria-label="日本語版の同じページ">JP</a><span class="lang-divider">/</span><a class="lang-current" href="{{ current_path | relative_url }}" lang="en" aria-current="page">EN</a>
+              <a href="{{ translated_path | relative_url }}" lang="ja" aria-label="同じ内容の日本語ページ">JP</a><span class="lang-divider">/</span><a class="lang-current" href="{{ current_path | relative_url }}" lang="en" aria-current="page">EN</a>
             {% else %}
-              <a class="lang-current" href="{{ current_path | relative_url }}" lang="ja" aria-current="page">JP</a><span class="lang-divider">/</span><a href="{{ translated_path | relative_url }}" lang="en" aria-label="English version of this page">EN</a>
+              <a class="lang-current" href="{{ current_path | relative_url }}" lang="ja" aria-current="page">JP</a><span class="lang-divider">/</span><a href="{{ translated_path | relative_url }}" lang="en" aria-label="English translation of this page">EN</a>
             {% endif %}
           </li>
         </ul>

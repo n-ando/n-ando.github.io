@@ -1,0 +1,12 @@
+/* Corrective styles for home social links and responsive biography. */
+.layout--landing .landing-identity{justify-content:center}
+.layout--landing .identity-copy{flex:0 1 760px}
+.layout--landing .identity-social{justify-content:center!important;margin-left:auto!important;margin-right:auto!important;width:100%;gap:.65rem}
+.layout--landing .identity-social .social-chip{display:inline-flex;justify-content:center;align-items:center;gap:.5rem;min-height:40px}
+.layout--landing .social-chip__image{width:25px!important;height:25px!important;display:block;object-fit:contain;flex-shrink:0}
+.layout--landing .social-chip--scholar{background:#17365b;border-color:#4277b5}
+.layout--landing .social-chip--scholar:hover{background:#204a7a}
+.profile-intro{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:2rem;align-items:start}
+.profile-intro__portrait{display:block;width:100%;height:auto;max-width:220px;border-radius:12px;object-fit:cover;justify-self:end}
+.profile-intro__text{min-width:0;overflow-wrap:anywhere}
+@media(max-width:700px){.profile-intro{grid-template-columns:1fr}.profile-intro__portrait{grid-row:1;justify-self:center;max-width:180px}.layout--landing .identity-social{justify-content:center!important}}
