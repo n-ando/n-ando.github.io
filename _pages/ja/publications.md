@@ -3,7 +3,7 @@ title: "論文・研究業績"
 permalink: /publications/
 layout: single
 lang: ja
-author_profile: false
+author_profile: true
 classes: wide
 ---
 # 論文・研究業績
