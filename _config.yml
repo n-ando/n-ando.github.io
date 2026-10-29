@@ -97,7 +97,7 @@ analytics:
 # Site Author
 author:
   name             : "Noriaki Ando, Ph.D."
-  avatar           : "/assets/images/n-ando.png"
+  avatar           : "https://avatars.githubusercontent.com/u/11814060?v=4"
   bio              : "Robotics Researcher"
   location         : "Tsukuba, Ibaraki, Japan"
   email            : # "Noriaki.Ando@gmail.com"
