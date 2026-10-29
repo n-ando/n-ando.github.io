@@ -34,3 +34,39 @@
     </div>
   </div>
 </div>
+
+<script>
+/* Keep language links correct even when jekyll-polyglot rewrites Liquid URLs. */
+(function () {
+  function fixLanguageLinks() {
+    var nav = document.getElementById('site-nav');
+    if (!nav) return;
+    var path = window.location.pathname.replace(/\/+/g, '/');
+    var english = path === '/en' || path.indexOf('/en/') === 0;
+    var basePath = english ? path.replace(/^\/en(?=\/|$)/, '') : path;
+    if (!basePath || basePath === '/') basePath = '/';
+    if (!basePath.endsWith('/')) basePath += '/';
+    var japanesePath = basePath;
+    var englishPath = '/en' + basePath;
+    var jp = nav.querySelector('.nav-language a[lang="ja"]');
+    var en = nav.querySelector('.nav-language a[lang="en"]');
+    if (jp) {
+      jp.setAttribute('href', japanesePath);
+      jp.classList.toggle('lang-current', !english);
+      if (!english) jp.setAttribute('aria-current', 'page');
+      else jp.removeAttribute('aria-current');
+    }
+    if (en) {
+      en.setAttribute('href', englishPath);
+      en.classList.toggle('lang-current', english);
+      if (english) en.setAttribute('aria-current', 'page');
+      else en.removeAttribute('aria-current');
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fixLanguageLinks);
+  } else {
+    fixLanguageLinks();
+  }
+})();
+</script>
