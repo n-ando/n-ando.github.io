@@ -10,3 +10,24 @@
 .profile-intro__portrait{display:block;width:100%;height:auto;max-width:220px;border-radius:12px;object-fit:cover;justify-self:end}
 .profile-intro__text{min-width:0;overflow-wrap:anywhere}
 @media(max-width:700px){.profile-intro{grid-template-columns:1fr}.profile-intro__portrait{grid-row:1;justify-self:center;max-width:180px}.layout--landing .identity-social{justify-content:center!important}}
+
+/* Align the masthead title with the author sidebar on wide inner pages.
+   The landing page keeps its full-width masthead treatment. */
+@media (min-width: 1024px) {
+  body:not(.layout--landing) .masthead__inner-wrap {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:not(.layout--landing) .masthead .site-title {
+    box-sizing: border-box;
+    flex: 0 0 16%;
+    width: 16%;
+    margin-right: 0;
+    padding-left: 0;
+    text-align: left;
+  }
+  body:not(.layout--landing) .masthead .visible-links {
+    margin-left: auto;
+  }
+}
