@@ -3,7 +3,7 @@ title: "研究プロジェクト"
 permalink: /research/
 layout: single
 lang: ja
-author_profile: false
+author_profile: true
 classes: wide
 ---
 # 受託研究プロジェクト
