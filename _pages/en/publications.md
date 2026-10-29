@@ -3,7 +3,7 @@ title: "Publications"
 permalink: /en/publications/
 layout: single
 lang: en
-author_profile: false
+author_profile: true
 classes: wide
 ---
 # Selected Publications
