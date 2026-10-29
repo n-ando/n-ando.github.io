@@ -3,7 +3,7 @@ title: "Awards"
 permalink: /en/awards/
 layout: single
 lang: en
-author_profile: false
+author_profile: true
 classes: wide
 ---
 # Awards and Honors
