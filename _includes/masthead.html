@@ -36,48 +36,82 @@
 </div>
 
 <script>
-/* Keep language links correct even when jekyll-polyglot rewrites Liquid URLs. */
+/* Resolve navigation from the actual URL, including links moved to hidden-links
+   by Minimal Mistakes' greedy navigation. Never depend on Polyglot-rewritten hrefs. */
 (function () {
-  function fixLanguageLinks() {
+  var sections = [
+    ['/', 'ホーム', 'Home'],
+    ['/profile/', '経歴', 'Career'],
+    ['/awards/', '受賞', 'Awards'],
+    ['/publications/', '論文', 'Publications'],
+    ['/societies/', '所属学会', 'Societies'],
+    ['/software/', 'Works', 'Works'],
+    ['/research/', '研究プロジェクト', 'Projects']
+  ];
+  function englishPage() {
+    return /^\/en(?:\/|$)/.test(window.location.pathname);
+  }
+  function sectionHref(index) {
+    return (englishPage() ? '/en' : '') + sections[index][0];
+  }
+  function updateMenu() {
     var nav = document.getElementById('site-nav');
     if (!nav) return;
-    var path = window.location.pathname.replace(/\/+/g, '/');
-    var english = path === '/en' || path.indexOf('/en/') === 0;
-    var menuLabels = english
-      ? ['Home', 'Career', 'Awards', 'Publications', 'Societies', 'Works', 'Projects']
-      : ['ホーム', '経歴', '受賞', '論文', '所属学会', 'Works', '研究プロジェクト'];
-    var menuPaths = ['/', '/profile/', '/awards/', '/publications/', '/societies/', '/software/', '/research/'];
-    var menuLinks = nav.querySelectorAll('.visible-links > .masthead__menu-item:not(.nav-language) > a');
-    for (var i = 0; i < menuLinks.length && i < menuPaths.length; i++) {
-      menuLinks[i].textContent = menuLabels[i];
-      menuLinks[i].setAttribute('href', english ? '/en' + menuPaths[i] : menuPaths[i]);
+    var english = englishPage();
+    var links = nav.querySelectorAll('.visible-links > .masthead__menu-item:not(.nav-language) > a');
+    for (var i = 0; i < links.length && i < sections.length; i++) {
+      links[i].textContent = sections[i][english ? 2 : 1];
+      links[i].href = sectionHref(i);
+      links[i].setAttribute('data-section-index', String(i));
     }
-    var siteTitle = nav.querySelector('.site-title');
-    if (siteTitle) siteTitle.setAttribute('href', english ? '/en/' : '/');
-    var basePath = english ? path.replace(/^\/en(?=\/|$)/, '') : path;
-    if (!basePath || basePath === '/') basePath = '/';
-    if (!basePath.endsWith('/')) basePath += '/';
-    var japanesePath = basePath;
-    var englishPath = '/en' + basePath;
+    var hidden = nav.querySelectorAll('.hidden-links > .masthead__menu-item > a');
+    for (var j = 0; j < hidden.length; j++) {
+      var label = hidden[j].textContent.trim();
+      for (var k = 0; k < sections.length; k++) {
+        if (label === sections[k][1] || label === sections[k][2]) {
+          hidden[j].textContent = sections[k][english ? 2 : 1];
+          hidden[j].href = sectionHref(k);
+          hidden[j].setAttribute('data-section-index', String(k));
+          break;
+        }
+      }
+    }
+    var title = nav.querySelector('.site-title');
+    if (title) title.href = english ? '/en/' : '/';
+    var path = window.location.pathname.replace(/\/+/g, '/');
+    var base = english ? path.replace(/^\/en(?=\/|$)/, '') : path;
+    if (!base || base === '/') base = '/';
+    if (!base.endsWith('/')) base += '/';
     var jp = nav.querySelector('.nav-language a[lang="ja"]');
     var en = nav.querySelector('.nav-language a[lang="en"]');
-    if (jp) {
-      jp.setAttribute('href', japanesePath);
-      jp.classList.toggle('lang-current', !english);
-      if (!english) jp.setAttribute('aria-current', 'page');
-      else jp.removeAttribute('aria-current');
-    }
-    if (en) {
-      en.setAttribute('href', englishPath);
-      en.classList.toggle('lang-current', english);
-      if (english) en.setAttribute('aria-current', 'page');
-      else en.removeAttribute('aria-current');
-    }
+    if (jp) { jp.href = base; jp.classList.toggle('lang-current', !english); }
+    if (en) { en.href = '/en' + base; en.classList.toggle('lang-current', english); }
   }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fixLanguageLinks);
-  } else {
-    fixLanguageLinks();
+  function install() {
+    updateMenu();
+    var nav = document.getElementById('site-nav');
+    if (!nav) return;
+    nav.addEventListener('click', function (event) {
+      var anchor = event.target.closest('a');
+      if (!anchor || !nav.contains(anchor)) return;
+      var index = anchor.getAttribute('data-section-index');
+      var destination = null;
+      if (index !== null && sections[Number(index)]) destination = sectionHref(Number(index));
+      else if (anchor.matches('.site-title')) destination = englishPage() ? '/en/' : '/';
+      else if (anchor.matches('.nav-language a[lang="ja"]')) {
+        destination = window.location.pathname.replace(/^\/en(?=\/|$)/, '') || '/';
+      } else if (anchor.matches('.nav-language a[lang="en"]')) {
+        var path = window.location.pathname;
+        destination = /^\/en(?:\/|$)/.test(path) ? path : '/en' + (path === '/' ? '/' : path);
+      }
+      if (!destination) return;
+      anchor.href = destination;
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      window.location.assign(destination);
+    }, true);
   }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', install);
+  else install();
 })();
 </script>
