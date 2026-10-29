@@ -31,3 +31,17 @@
     margin-left: auto;
   }
 }
+
+/* Center the site title over the portrait/sidebar column on wide pages.
+   Minimal Mistakes places the author avatar at the center of the 200px sidebar. */
+@media (min-width: 1024px) {
+  body:not(.layout--landing) .masthead .site-title {
+    flex: 0 0 200px;
+    width: 200px;
+    max-width: 200px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+  }
+}
