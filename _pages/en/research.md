@@ -1,28 +1,46 @@
 ---
-title: "Research & Projects"
+title: "Research Projects"
 permalink: /en/research/
 layout: single
-author_profile: true
 lang: en
+author_profile: false
 classes: wide
 ---
-## Research areas
+# Commissioned Research Projects
 
-<div class="feature-grid">
-<div><span>ROBOTICS</span><h3>Robot Software</h3><p>RT middleware, ROS 2, modularity, and distributed architectures.</p></div>
-<div><span>INTELLIGENCE</span><h3>AI & Intelligent Robotics</h3><p>Learning-based control, robot intelligence, and human-robot collaboration.</p></div>
-<div><span>DEPLOYMENT</span><h3>CPS & Deployment</h3><p>Level 4 automated driving, remote monitoring, digital twins, and safety.</p></div>
-</div>
+The 27 commissioned research records (marked **受）**) were extracted from section 83 of the supplied career record. Joint research entries (**共）**) are excluded. Leadership is determined by whether Noriaki Ando is the first named researcher.
 
-## Selected topics
+## Principal Investigator（4件）
 
-### Robot software development platforms
-Improving development efficiency, quality, reliability, and safety using open-source robotics software and supporting tools.
+- **2025** — ロボットSI効率化に向けた品質・信頼性・安全性強化型ソフトウェア開発基盤の構築（NEDO） — 2025/07/18–2027/02/28
+- **2023** — 個体間ネットワークを介したモジュール共有および接続機構の実現（JST） — 2023/04/01–2027/03/31
+- **2020** — 高度セミナーの開発と実施、将来戦略の企画立案、ソフトウェア品質評価の実施（埼玉大学） — 2020/05/26–2023/03/31
+- **2017** — ロボット活用型市場化適用技術開発プロジェクト／オープンソースロボットソフトウェアのプラットフォーム化技術開発（NEDO） — 2017/07/21–2020/02/29
 
-### Automated driving and remote monitoring
-Research and demonstration of Level 4 automated driving and remote operations for public transport.
+## Collaborator（23件）
 
-### Robot modularity and standardization
-International standardization of robot module interfaces and common information models.
+- **2025** — AIセーフティ強化に関する研究開発（NEDO）
+- **2023** — RX推進人材・高度ロボットSIエンジニア育成事業（NEDO）
+- **2022** — イチゴ炭疽病耐病性品種の耐性機構解明と減農薬栽培技術の開発（公立大学法人大阪）
+- **2022** — 電気自動車・燃料電池車の導入に向けたエネルギーマネジメントと車両運行管理を最適化するシミュレーションシステムの構築（NEDO）
+- **2021** — イチゴ炭疽病耐病性品種の耐性機構解明と減農薬栽培技術の開発（農研機構）
+- **2020** — 無人航空機に求められる安全基準策定のための研究開発（NEDO）
+- **2017** — 模擬プラント用ロボットシミュレータ開発業務（FSK）
+- **2016** — スマートマニュファクチャリングに関する国際標準化・普及基盤構築（経済産業省）
+- **2012** — 先端計測分析機器用共通ソフトウエアプラットフォームの開発（大阪大学）
+- **2012** — 実時間並列ディペンダブルOSとその分散ネットワークの研究（JST）
+- **2012** — 故障未然防衛機能を有した高信頼ソフトウェアプラットフォームの開発（ヴィッツ）
+- **2009** — 生活支援ロボットの安全性検証手法の研究開発（NEDO）
+- **2008** — 基盤ロボット技術活用型オープンイノベーション促進プロジェクト（NEDO）
+- **2008** — 実時間並列ディペンダブルOSとその分散ネットワークの研究（JST）
+- **2008** — ロボット知能ソフトウェアプラットフォームの研究開発（NEDO）
+- **2007** — 次世代ロボット知能化技術開発プロジェクト（平成19年度戦略的技術開発委託費）（経済産業省）
+- **2007** — 分散コンポーネント型ロボットシミュレータ（文部科学省）
+- **2005** — 次世代ロボット共通基盤開発プロジェクト 運動制御用デバイス及びモジュールの開発（NEDO（契約記録1））
+- **2005** — 次世代ロボット共通基盤開発プロジェクト 運動制御用デバイス及びモジュールの開発（NEDO（契約記録2））
+- **2005** — 次世代ロボット共通基盤開発プロジェクト 運動制御用デバイス及びモジュールの開発（NEDO（契約記録3））
+- **2005** — 次世代ロボット共通基盤開発プロジェクト 運動制御用デバイス及びモジュールの開発（NEDO（契約記録4））
+- **2003** — ロボットの開発基盤となるソフトウェア上の基盤整備（NEDO）
+- **2003** — 21世紀ロボットチャレンジプログラム／ロボットの開発基盤となるソフトウェア上の基盤整備（NEDO）
 
-[Software](/en/software/) · [AIST](https://www.aist.go.jp/)
+*Note: separate contract records with the same title are listed separately.*
