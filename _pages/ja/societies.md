@@ -3,7 +3,7 @@ title: "所属学会"
 permalink: /societies/
 layout: single
 lang: ja
-author_profile: false
+author_profile: true
 ---
 # 所属学会
 
