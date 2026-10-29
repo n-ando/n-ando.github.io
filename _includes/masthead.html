@@ -43,6 +43,17 @@
     if (!nav) return;
     var path = window.location.pathname.replace(/\/+/g, '/');
     var english = path === '/en' || path.indexOf('/en/') === 0;
+    var menuLabels = english
+      ? ['Home', 'Career', 'Awards', 'Publications', 'Societies', 'Works', 'Projects']
+      : ['ホーム', '経歴', '受賞', '論文', '所属学会', 'Works', '研究プロジェクト'];
+    var menuPaths = ['/', '/profile/', '/awards/', '/publications/', '/societies/', '/software/', '/research/'];
+    var menuLinks = nav.querySelectorAll('.visible-links > .masthead__menu-item:not(.nav-language) > a');
+    for (var i = 0; i < menuLinks.length && i < menuPaths.length; i++) {
+      menuLinks[i].textContent = menuLabels[i];
+      menuLinks[i].setAttribute('href', english ? '/en' + menuPaths[i] : menuPaths[i]);
+    }
+    var siteTitle = nav.querySelector('.site-title');
+    if (siteTitle) siteTitle.setAttribute('href', english ? '/en/' : '/');
     var basePath = english ? path.replace(/^\/en(?=\/|$)/, '') : path;
     if (!basePath || basePath === '/') basePath = '/';
     if (!basePath.endsWith('/')) basePath += '/';
