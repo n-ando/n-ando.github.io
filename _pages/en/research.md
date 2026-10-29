@@ -3,7 +3,7 @@ title: "Research Projects"
 permalink: /en/research/
 layout: single
 lang: en
-author_profile: false
+author_profile: true
 classes: wide
 ---
 # Commissioned Research Projects
