@@ -14,7 +14,7 @@ body:has(.landing-identity) .page__inner-wrap{float:none;width:100%;margin:0}
 body:has(.landing-identity) .page__title{display:none}
 body:has(.landing-identity) .page__content{width:100%;margin:0;padding:0}
 body:has(.landing-identity) .page__content p{margin-bottom:1rem}
-.hero-banner{position:relative;width:100%;height:clamp(240px,26vw,365px);overflow:hidden;background-color:#061222;background-image:linear-gradient(90deg,rgba(3,12,25,.35),rgba(3,12,25,.08) 50%,rgba(2,13,29,.52)),url('/assets/images/cyber-hero.webp');background-repeat:no-repeat;background-size:cover;background-position:center}
+.hero-banner{position:relative;width:100%;height:clamp(240px,26vw,365px);overflow:hidden;background-color:#061222;background-image:linear-gradient(90deg,rgba(3,12,25,.35),rgba(3,12,25,.08) 50%,rgba(2,13,29,.52)),url('/assets/images/cyber-hero.svg');background-repeat:no-repeat;background-size:cover;background-position:center}
 .hero-banner__grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,218,250,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,218,250,.05) 1px,transparent 1px);background-size:55px 55px;box-shadow:inset 0 -22px 35px #04090d88;pointer-events:none}
 .hero-banner__caption{position:absolute;bottom:1.65rem;right:max(2rem,calc((100vw - 1120px)/2));font-size:.69rem;font-weight:750;letter-spacing:.21em;color:#d9f5ff;text-shadow:0 1px 10px #000}
 .landing-identity{max-width:1120px;margin:0 auto;padding:0 1.4rem 2.3rem;display:flex;align-items:flex-start;gap:2rem;border-bottom:1px solid #8995a540}
