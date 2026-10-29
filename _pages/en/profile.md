@@ -13,9 +13,9 @@ lang: "en"
 - Affiliation:
   - National Institute of Advanced Industrial Science and Technology
   - Tokyo Metropolitan University
-- Division: 
-  - Team Leader, Software Platform Research Team, Industrial CPS Research Center
-  - Visiting Professor, Faculty of System Design, Tokyo Metropolitan University 
+- Position:
+  - Director, Intelligent Systems Research Institute, National Institute of Advanced Industrial Science and Technology (AIST)
+  - Visiting Professor, Tokyo Metropolitan University
 - Research: 
   - Robot Middleware, Software Architecture, Abmient Intelligence, Tele-operation, Standardization
 - Birthplace:
