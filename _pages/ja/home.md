@@ -24,7 +24,8 @@ classes: wide landing-page
       <a class="social-chip" href="https://twitter.com/openrtm_ando" rel="me"><span class="social-chip__icon">𝕏</span> Twitter</a>
       <a class="social-chip" href="https://www.facebook.com/noriaki.ando.3/" rel="me"><span class="social-chip__icon">f</span> Facebook</a>
       <a class="social-chip" href="https://www.linkedin.com/search/results/people/?keywords=Noriaki%20Ando" aria-label="Find Noriaki Ando on LinkedIn"><span class="social-chip__icon">in</span> LinkedIn</a>
-      <a class="social-chip social-chip--researchmap" href="https://researchmap.jp/noriaki.ando" rel="me"><span class="social-chip__icon">r</span><span>researchmap<small>JST Research Profile</small></span></a>
+      <a class="social-chip social-chip--researchmap" href="https://researchmap.jp/noriaki.ando" rel="me"><img class="social-chip__image" src="{{ '/assets/images/researchmap-mark.svg' | relative_url }}" alt="">researchmap</a>
+      <a class="social-chip social-chip--scholar" href="https://scholar.google.com/citations?user=dYiMngsAAAAJ&amp;hl=ja" rel="me"><img class="social-chip__image" src="{{ '/assets/images/google-scholar-mark.svg' | relative_url }}" alt="">Google Scholar</a>
     </div>
   </div>
 </section>
