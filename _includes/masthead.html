@@ -22,9 +22,9 @@
           {% endif %}
           <li class="masthead__menu-item nav-language">
             {% if current_lang == 'en' %}
-              <a href="{{ translated_path | relative_url }}" lang="ja" aria-label="日本語版の同じページ">JP</a><span class="lang-divider">/</span><span class="lang-current" aria-current="page">EN</span>
+              <a href="{{ translated_path | relative_url }}" lang="ja" aria-label="日本語版の同じページ">JP</a><span class="lang-divider">/</span><a class="lang-current" href="{{ current_path | relative_url }}" lang="en" aria-current="page">EN</a>
             {% else %}
-              <span class="lang-current" aria-current="page">JP</span><span class="lang-divider">/</span><a href="{{ translated_path | relative_url }}" lang="en" aria-label="English version of this page">EN</a>
+              <a class="lang-current" href="{{ current_path | relative_url }}" lang="ja" aria-current="page">JP</a><span class="lang-divider">/</span><a href="{{ translated_path | relative_url }}" lang="en" aria-label="English version of this page">EN</a>
             {% endif %}
           </li>
         </ul>
