@@ -1,24 +1,26 @@
-# main links
 ja:
-  - title: "Home"
+  - title: "ホーム"
     url: /
   - title: "プロフィール"
     url: /profile/
-  - title: "OpenRTM"
-    url: https://openrtm.org
+  - title: "研究"
+    url: /research/
+  - title: "ソフトウェア"
+    url: /software/
   - title: "リンク"
     url: /link/
   - title: "English"
     url: /en/
-
 en:
   - title: "Home"
     url: /en/
   - title: "Profile"
     url: /en/profile/
-  - title: "OpenRTM"
-    url: https://openrtm.org/openrtm/en/
+  - title: "Research"
+    url: /en/research/
+  - title: "Software"
+    url: /en/software/
   - title: "Links"
     url: /en/link/
-  - title: "Japanese"
-    url: /ja/
+  - title: "日本語"
+    url: /
