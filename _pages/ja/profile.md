@@ -3,7 +3,7 @@ title: "経歴"
 layout: single
 permalink: /profile/
 lang: ja
-author_profile: false
+author_profile: true
 classes: wide
 ---
 # 経歴
