@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "安藤慶昭"
-layout: single
+layout: landing
 author_profile: false
 lang: ja
 classes: wide landing-page
@@ -20,10 +20,11 @@ classes: wide landing-page
     <p class="identity-label">RESEARCHER PROFILE</p>
     <h1>安藤 慶昭 <span>Noriaki Ando</span></h1>
     <p>国立研究開発法人産業技術総合研究所<br>インテリジェントシステム研究部門　部門長</p>
-    <div class="identity-social">
-      <a href="https://github.com/n-ando">GitHub</a>
-      <a href="https://openrtm.org/">OpenRTM</a>
-      <a href="https://twitter.com/openrtm_ando">X / Twitter</a>
+    <div class="identity-social" aria-label="Social and research profiles">
+      <a class="social-chip" href="https://twitter.com/openrtm_ando" rel="me"><span class="social-chip__icon">𝕏</span> Twitter</a>
+      <a class="social-chip" href="https://www.facebook.com/noriaki.ando.3/" rel="me"><span class="social-chip__icon">f</span> Facebook</a>
+      <a class="social-chip" href="https://www.linkedin.com/search/results/people/?keywords=Noriaki%20Ando" aria-label="Find Noriaki Ando on LinkedIn"><span class="social-chip__icon">in</span> LinkedIn</a>
+      <a class="social-chip social-chip--researchmap" href="https://researchmap.jp/noriaki.ando" rel="me"><span class="social-chip__icon">r</span><span>researchmap<small>JST Research Profile</small></span></a>
     </div>
   </div>
 </section>
@@ -35,13 +36,5 @@ classes: wide landing-page
     <a href="/research/"><span>RESEARCH PROJECTS</span><h3>研究プロジェクト</h3><p>ロボットソフトウェア、知能ロボティクス、CPS、自動運転と社会実装。</p></a>
     <a href="/software/"><span>OPEN SOURCE & TOOLS</span><h3>Works</h3><p>OpenRTM-aist、FinderToolsなどのソフトウェア・開発ツール。</p></a>
     <a href="/publications/"><span>ACADEMIC OUTPUT</span><h3>論文・研究業績</h3><p>研究論文、学会発表などの業績を整理するページ。</p></a>
-  </div>
-  <div class="landing-section-links">
-    <a href="/profile/">経歴</a>
-    <a href="/awards/">受賞</a>
-    <a href="/publications/">論文</a>
-    <a href="/societies/">所属学会</a>
-    <a href="/software/">Works</a>
-    <a href="/research/">研究プロジェクト</a>
   </div>
 </div>
