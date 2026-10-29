@@ -3,7 +3,7 @@ title: "Career"
 layout: single
 permalink: /en/profile/
 lang: en
-author_profile: false
+author_profile: true
 classes: wide
 ---
 # Career
