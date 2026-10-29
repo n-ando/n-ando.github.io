@@ -9,11 +9,22 @@
           {% for link in menu_items %}
           <li class="masthead__menu-item"><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
           {% endfor %}
+          {% assign current_path = page.permalink | default: page.url %}
+          {% if current_lang == 'en' %}
+            {% assign translated_path = current_path | remove_first: '/en' %}
+            {% if translated_path == '' %}{% assign translated_path = '/' %}{% endif %}
+          {% else %}
+            {% if current_path == '/' %}
+              {% assign translated_path = '/en/' %}
+            {% else %}
+              {% assign translated_path = current_path | prepend: '/en' %}
+            {% endif %}
+          {% endif %}
           <li class="masthead__menu-item nav-language">
             {% if current_lang == 'en' %}
-            <a href="/" lang="ja" aria-label="日本語ページへ">JP</a><span> / EN</span>
+              <a href="{{ translated_path | relative_url }}" lang="ja" aria-label="日本語版の同じページ">JP</a><span class="lang-divider">/</span><span class="lang-current" aria-current="page">EN</span>
             {% else %}
-            <span>JP / </span><a href="/en/" lang="en" aria-label="English version">EN</a>
+              <span class="lang-current" aria-current="page">JP</span><span class="lang-divider">/</span><a href="{{ translated_path | relative_url }}" lang="en" aria-label="English version of this page">EN</a>
             {% endif %}
           </li>
         </ul>
