@@ -87,8 +87,28 @@
     if (jp) { jp.href = base; jp.classList.toggle('lang-current', !english); }
     if (en) { en.href = '/en' + base; en.classList.toggle('lang-current', english); }
   }
+  function alignTitleWithPortrait() {
+    var title = document.querySelector('.masthead .site-title');
+    if (!title) return;
+    title.style.transform = '';
+    if (window.innerWidth < 1024 || document.querySelector('.landing-main')) return;
+    var portrait = document.querySelector('.sidebar .author__avatar img, .sidebar .author__avatar, .author__avatar img');
+    if (!portrait) return;
+    var avatarBox = portrait.getBoundingClientRect();
+    var titleBox = title.getBoundingClientRect();
+    if (!avatarBox.width || !titleBox.width) return;
+    var offset = (avatarBox.left + avatarBox.width / 2) - (titleBox.left + titleBox.width / 2);
+    title.style.transform = 'translateX(' + offset.toFixed(2) + 'px)';
+  }
+  function scheduleAlignment() {
+    window.requestAnimationFrame(alignTitleWithPortrait);
+  }
   function install() {
     updateMenu();
+    scheduleAlignment();
+    window.addEventListener('resize', scheduleAlignment);
+    window.addEventListener('load', scheduleAlignment);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(scheduleAlignment);
     var nav = document.getElementById('site-nav');
     if (!nav) return;
     nav.addEventListener('click', function (event) {
