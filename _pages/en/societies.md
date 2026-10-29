@@ -3,7 +3,7 @@ title: "Professional Societies"
 permalink: /en/societies/
 layout: single
 lang: en
-author_profile: false
+author_profile: true
 ---
 # Professional Societies
 
