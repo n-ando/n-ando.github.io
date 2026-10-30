@@ -88,17 +88,30 @@
     if (en) { en.href = '/en' + base; en.classList.toggle('lang-current', english); }
   }
   function alignTitleWithPortrait() {
-    var title = document.querySelector('.masthead .site-title');
+    var nav = document.getElementById('site-nav');
+    var title = nav && nav.querySelector('.site-title');
     if (!title) return;
-    title.style.transform = '';
+    title.style.removeProperty('left');
+    title.style.removeProperty('position');
+    title.style.removeProperty('transform');
+    title.style.removeProperty('width');
+    title.style.removeProperty('max-width');
+    title.style.removeProperty('flex');
     if (window.innerWidth < 1024 || document.querySelector('.landing-main')) return;
-    var portrait = document.querySelector('.sidebar .author__avatar img, .sidebar .author__avatar, .author__avatar img');
+    var portrait = document.querySelector('.sidebar .author__avatar img, .sidebar .author__avatar');
     if (!portrait) return;
     var avatarBox = portrait.getBoundingClientRect();
-    var titleBox = title.getBoundingClientRect();
-    if (!avatarBox.width || !titleBox.width) return;
-    var offset = (avatarBox.left + avatarBox.width / 2) - (titleBox.left + titleBox.width / 2);
-    title.style.transform = 'translateX(' + offset.toFixed(2) + 'px)';
+    var navBox = nav.getBoundingClientRect();
+    if (!avatarBox.width || !navBox.width) return;
+    /* Absolute positioning removes the variable flex-width/greedy-nav offset.
+       The center of the title is anchored directly to the portrait center. */
+    nav.style.position = 'relative';
+    title.style.setProperty('position', 'absolute', 'important');
+    title.style.setProperty('left', ((avatarBox.left + avatarBox.width / 2) - navBox.left).toFixed(2) + 'px', 'important');
+    title.style.setProperty('width', 'max-content', 'important');
+    title.style.setProperty('max-width', 'none', 'important');
+    title.style.setProperty('flex', 'none', 'important');
+    title.style.setProperty('transform', 'translateX(-50%)', 'important');
   }
   function scheduleAlignment() {
     window.requestAnimationFrame(alignTitleWithPortrait);
