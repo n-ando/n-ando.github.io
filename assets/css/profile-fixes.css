@@ -62,3 +62,20 @@
   border-bottom: none !important;
   box-shadow: none !important;
 }
+/* Full-bleed motion background for the Japanese and English landing banners. */
+.layout--landing .hero-banner { isolation: isolate; }
+.layout--landing .hero-banner__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  pointer-events: none;
+}
+.layout--landing .hero-banner__grid,
+.layout--landing .hero-banner__caption { position: relative; z-index: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .layout--landing .hero-banner__video { display: none; }
+}
