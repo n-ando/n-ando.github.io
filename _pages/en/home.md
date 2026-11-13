@@ -8,9 +8,6 @@ classes: wide landing-page
 ---
 
 <section class="hero-banner" aria-label="Robotics software image">
-  <video class="hero-banner__video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
-    <source src="{{ '/assets/videos/isri_web_ebook.mp4' | relative_url }}" type="video/mp4">
-  </video>
   <div class="hero-banner__grid" aria-hidden="true"></div>
   <div class="hero-banner__caption">ROBOTICS / SOFTWARE / INTELLIGENT SYSTEMS</div>
 </section>
