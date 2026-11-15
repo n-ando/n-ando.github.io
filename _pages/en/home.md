@@ -19,7 +19,7 @@ classes: wide landing-page
   <div class="identity-copy">
     <p class="identity-label">RESEARCHER PROFILE</p>
     <h1>Noriaki Ando <span>安藤 慶昭</span></h1>
-    <p>Director, Intelligent Systems Research Institute<br>National Institute of Advanced Industrial Science and Technology (AIST)</p>
+    <p>Director, <a href="https://www.isri.aist.go.jp/en/">Intelligent Systems Research Institute</a><br><a href="https://www.aist.go.jp">National Institute of Advanced Industrial Science and Technology (AIST)</a></p>
     <div class="identity-social" aria-label="Social and research profiles">
       <a class="social-chip" href="https://twitter.com/openrtm_ando" rel="me"><span class="social-chip__icon">𝕏</span> Twitter</a>
       <a class="social-chip" href="https://www.facebook.com/noriaki.ando.3/" rel="me"><span class="social-chip__icon">f</span> Facebook</a>
