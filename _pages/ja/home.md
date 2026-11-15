@@ -19,7 +19,7 @@ classes: wide landing-page
   <div class="identity-copy">
     <p class="identity-label">RESEARCHER PROFILE</p>
     <h1>安藤 慶昭 <span>Noriaki Ando</span></h1>
-    <p>国立研究開発法人産業技術総合研究所<br><a href="https://www.isri.aist.go.jp"?インテリジェントシステム研究部門</a>　部門長</p>
+    <p>国立研究開発法人産業技術総合研究所<br><a href="https://www.isri.aist.go.jp">インテリジェントシステム研究部門</a>　部門長</p>
     <div class="identity-social" aria-label="Social and research profiles">
       <!--a class="social-chip" href="https://twitter.com/openrtm_ando" rel="me"><span class="social-chip__icon">𝕏</span> Twitter</a-->
       <a class="social-chip" href="https://www.facebook.com/noriaki.ando.3/" rel="me"><span class="social-chip__icon">f</span> Facebook</a>
